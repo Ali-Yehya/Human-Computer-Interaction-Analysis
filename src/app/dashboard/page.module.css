@@ -1,0 +1,109 @@
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+}
+
+.content {
+  padding: 24px;
+  flex: 1;
+}
+
+.engagementSummary {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.summaryChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid;
+  transition: all var(--transition);
+}
+
+.summaryChip:hover {
+  transform: translateY(-1px);
+}
+
+.chipEngaged {
+  background: var(--green-bg);
+  color: var(--green);
+  border-color: var(--green-border);
+}
+
+.chipNeutral {
+  background: var(--amber-bg);
+  color: var(--amber);
+  border-color: var(--amber-border);
+}
+
+.chipLost {
+  background: var(--red-bg);
+  color: var(--red);
+  border-color: var(--red-border);
+}
+
+.gridHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.gridTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.studentCount {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+.addBtn {
+  background: var(--blue-bg);
+  color: var(--blue);
+  border: 1px solid var(--blue-border);
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-height: 44px;
+  transition: all var(--transition);
+}
+
+.addBtn:hover {
+  background: var(--blue);
+  color: white;
+  box-shadow: var(--shadow-glow-blue);
+  transform: translateY(-1px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 14px;
+  max-width: 1960px;
+}
+
+@media (min-width: 1800px) {
+  .grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.heatmapSection {
+  margin-top: 32px;
+}

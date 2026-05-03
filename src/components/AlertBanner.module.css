@@ -1,0 +1,17 @@
+.banner {
+  background: var(--red-bg);
+  border-left: 3px solid var(--red);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: var(--red);
+  font-size: 0.9rem;
+  animation: slideUp 0.3s ease-out;
+}
+
+.icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
